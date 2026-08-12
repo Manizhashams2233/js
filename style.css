@@ -1,0 +1,142 @@
+body {
+    background-color: rgb(234, 233, 233);
+}
+.strong{
+    text-align: center;
+    margin-top: 90px;
+      
+}
+
+#gray{
+    color: gray;
+}
+.btn{
+    background-color: aliceblue;
+    color: black;
+    border-radius: 15px;
+    justify-content: flex-start;
+    margin: 30px;
+    padding: 8px;
+    text-align: center;
+    border-color: black;
+}
+
+.all{
+    background-color: purple;
+    color: white;
+    border-radius: 15px;
+    border-color: black;
+    padding:8px ;
+    margin: 30px;
+}
+.btns{
+    display: flex;
+    gap: 720px;
+    justify-content: center;
+align-items: center;
+}
+
+.cards{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+align-items: center;
+   
+}
+.card{
+    width: 260px;
+    height: 420px;
+    background-color: aliceblue;
+margin-left: 33px;
+border-radius: 20px;
+margin: 10px;
+justify-content: center;
+align-items: center;
+
+}
+.img{
+    width: 220px;
+  padding-top: 5px;
+ 
+  padding: 12px 12px;
+  border-radius: 15px;
+
+}
+.card h1{ 
+    font-size: 16px;
+ padding-left: 20px;
+
+}
+.card p{
+   padding-left: 20px;
+      color: gray;
+}
+#span {
+    padding-left: 10px;
+}
+ .price p{
+   color: gray;
+  
+}
+ .price span{
+
+    color: black;
+   padding-left: 11px;
+   
+}
+.start{
+    display: flex;
+    gap: 30px;
+    padding-bottom: 10px;
+    align-items: center;
+    
+}
+.book{
+   
+   
+     margin-right: 2px;
+   
+      width: 110px;
+    height: 30px;
+    border-radius: 20px;
+    border-color: rgb(121, 8, 121);
+  border-left-color:  rgb(121, 8, 121);
+  border-bottom-color:rgb(121, 8, 121) ;
+  border-right-color: rgb(121, 8, 121);
+background-color: white;
+    color: purple;
+     padding-left: 10px;
+  
+}
+
+.books{
+   margin-right: 2px;
+   
+      width: 110px;
+    height: 30px;
+    border-radius: 20px;
+   background: white;
+    color: black;
+    border-color: black;
+
+  border-left-color: black;
+  border-bottom-color:black ;
+  border-right-color: black;
+}
+.img2{
+      padding-top: 5px;
+  width: 60%;
+  height: 60;
+  padding: 12px 12px;
+  border-radius: 15px;
+  margin: 15px;
+}
+
+.cardss {
+    width: 100%;
+    height: auto;
+    display: flex;
+
+   
+}
