@@ -31,7 +31,7 @@ body {
 }
 .btns{
     display: flex;
-    gap: 720px;
+    gap: 730px;
     justify-content: center;
 align-items: center;
 }
@@ -46,7 +46,7 @@ align-items: center;
 }
 .card{
     width: 260px;
-    height: 420px;
+    height: 410px;
     background-color: aliceblue;
 margin-left: 33px;
 border-radius: 20px;
@@ -56,9 +56,9 @@ align-items: center;
 
 }
 .img{
-    width: 220px;
+    width: 240px;
   padding-top: 5px;
- 
+ height: ;
   padding: 12px 12px;
   border-radius: 15px;
 
@@ -71,6 +71,7 @@ align-items: center;
 .card p{
    padding-left: 20px;
       color: gray;
+      font-size: 16px;
 }
 #span {
     padding-left: 10px;
@@ -99,13 +100,11 @@ align-items: center;
    
       width: 110px;
     height: 30px;
-    border-radius: 20px;
-    border-color: rgb(121, 8, 121);
-  border-left-color:  rgb(121, 8, 121);
-  border-bottom-color:rgb(121, 8, 121) ;
-  border-right-color: rgb(121, 8, 121);
+    border-radius: 5px;
+    border-color: rgb(39, 2, 69);
+ 
 background-color: white;
-    color: purple;
+    
      padding-left: 10px;
   
 }
@@ -115,7 +114,7 @@ background-color: white;
    
       width: 110px;
     height: 30px;
-    border-radius: 20px;
+    border-radius: 5px;
    background: white;
     color: black;
     border-color: black;
@@ -139,4 +138,20 @@ background-color: white;
     display: flex;
 
    
+}
+
+.img {
+     position: relative;
+display: inline-block;
+}
+.img img{
+   
+    display: block;
+}
+.img span{
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    background-color: white;
+    padding: 5px 10px;
 }
