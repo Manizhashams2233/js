@@ -161,3 +161,100 @@ display: inline-block;
     background-color: white;
     padding: 5px 10px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* TABLET */
+@media screen and (max-width: 900px) {
+
+    .btns {
+        width: 90%;
+    }
+
+    .cards {
+        gap: 15px;
+    }
+
+    .card {
+        width: 45%;
+    }
+
+}
+
+
+/* MOBILE */
+@media screen and (max-width: 600px) {
+
+    .strong {
+        margin-top: 50px;
+        padding: 0 15px;
+    }
+
+    .strong p {
+        font-size: 20px;
+    }
+
+    .btns {
+        width: 90%;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .btn,
+    .all {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+        max-width: 350px;
+        margin: 10px 0;
+    }
+
+    .img img {
+        height: 200px;
+    }
+
+    .start {
+        gap: 10px;
+    }
+
+    .book,
+    .books {
+        width: 50%;
+    }
+
+    .img2 {
+        width: 90%;
+        height: auto;
+        margin: 10px auto;
+        display: block;
+    }
+
+    .cardss {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+
+ 
