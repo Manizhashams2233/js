@@ -42,18 +42,20 @@ align-items: center;
 .cards{
     width: 100%;
     height: auto;
+ 
     display: flex;
     justify-content: center;
 align-items: center;
-   
+
 }
 .card{
-    width: 260px;
-    height: 370px;
+    width: 300px;
+    height: 250px;
     background-color: aliceblue;
 margin-left: 33px;
 border-radius: 5px;
 margin: 10px;
+
 justify-content: center;
 align-items: center;
 
@@ -269,358 +271,278 @@ body {
     padding: 8px 15px;
 }
 
+body {
+    background-color: rgb(234, 233, 233);
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
 
-/* =========================
-   CARDS
-========================= */
+/* TOP TEXT */
+.strong {
+    text-align: center;
+    margin-top: 90px;
+    padding: 0 20px;
+}
 
+.strong p {
+    font-size: 25px;
+    margin: 8px 0;
+}
+
+#gray {
+    color: gray;
+    font-size: 16px;
+}
+
+/* TOP BUTTONS */
+.btns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1100px;
+    margin: 30px auto;
+    gap: 20px;
+}
+
+.btn {
+    background-color: aliceblue;
+    color: black;
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 8px 15px;
+}
+
+.all {
+    background-color: purple;
+    color: white;
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 8px 15px;
+}
+
+/* CARDS */
 .cards {
     width: 100%;
-
     display: grid;
-
-    /* DESKTOP = 4 CARDS */
     grid-template-columns: repeat(4, 260px);
-
     justify-content: center;
-
     gap: 20px;
-
     padding: 10px 20px;
-
     box-sizing: border-box;
 }
 
-
-/* =========================
-   CARD
-========================= */
-
+/* CARD */
 .card {
     width: 260px;
     height: 370px;
-
     background-color: aliceblue;
-
     border-radius: 5px;
-
     padding: 10px;
-
     box-sizing: border-box;
 }
 
-
-/* =========================
-   CARD IMAGE
-========================= */
-
-.img {
+/* IMAGE */
+.card .img {
     width: 100%;
     height: 160px;
-
     object-fit: cover;
-
-    padding: 0;
-
-    border-radius: 15px;
-
     display: block;
+    padding: 0;
+    margin: 0;
+    border-radius: 15px;
 }
 
-
-/* =========================
-   CARD TITLE
-========================= */
-
+/* TITLE */
 .card h1 {
     font-size: 16px;
-
     padding-left: 5px;
-
-    margin: 8px 0;
+    margin: 12px 0;
 }
 
-
-/* =========================
-   CARD TEXT
-========================= */
-
+/* TEXT */
 .card p {
     padding-left: 5px;
-
     color: rgb(77, 77, 77);
-
     font-size: 14px;
-
     margin: 8px 0;
 }
-
-
-/* =========================
-   CARD SPANS
-========================= */
 
 #span {
     padding-left: 5px;
-
     font-size: 11px;
 }
 
-
-/* =========================
-   PRICE + BUTTON
-========================= */
-
+/* PRICE + BUTTON */
 .start {
     display: flex;
-
     justify-content: space-between;
-
     align-items: center;
-
     gap: 5px;
-
     padding: 10px 5px;
 }
 
-
 .price p {
     color: gray;
-
     font-size: 12px;
-
     margin: 0 0 5px 0;
 }
 
-
 .price span {
     color: black;
-
     font-size: 12px;
-
     padding-left: 0;
-
     white-space: nowrap;
 }
 
-
-/* =========================
-   BOOK BUTTON
-========================= */
-
+/* BOOK BUTTON */
 .book,
 .books {
     width: 110px;
     height: 30px;
-
     border-radius: 5px;
-
     background-color: white;
-
     color: black;
-
     border: 1px solid black;
-
     padding: 0;
-
     font-size: 11px;
 }
 
-
-/* =================================================
-   TABLET
-   551px تا 1000px
-   2 CARDS IN EACH ROW
-================================================= */
-
+/* TABLET */
 @media (max-width: 1000px) and (min-width: 551px) {
 
     .strong {
         margin-top: 60px;
     }
 
-    .strong p {
-        font-size: 22px;
-    }
-
-
-    /* BUTTONS */
-
     .btns {
         width: 90%;
-
         margin: 25px auto;
     }
 
-
-    /* 2 CARDS */
-
     .cards {
         grid-template-columns: repeat(2, minmax(0, 1fr));
-
         width: 90%;
-
         max-width: 650px;
-
         margin: 0 auto;
-
         gap: 20px;
     }
 
-
     .card {
         width: 100%;
-
         height: 370px;
     }
 
-
-    .img {
+    .card .img {
         width: 100%;
-
         height: 160px;
+        object-fit: cover;
+        margin: 0;
+        padding: 0;
     }
 }
 
-
-/* =================================================
-   MOBILE
-   550px AND BELOW
-   1 CARD IN EACH ROW
-================================================= */
-
+/* PHONE */
 @media (max-width: 550px) {
 
     .strong {
         margin-top: 40px;
-
         padding: 0 15px;
     }
-
 
     .strong p {
         font-size: 19px;
     }
 
-
     #gray {
         font-size: 13px;
     }
 
-
-    /* BUTTONS */
-
     .btns {
         width: 100%;
-
-        flex-direction: column;
-
+        flex-direction: row;
+        justify-content: space-between;
         gap: 10px;
-
         margin: 20px auto;
+        padding: 0 15px;
+        box-sizing: border-box;
     }
-
 
     .btn,
     .all {
-        width: 90%;
-
-        max-width: 300px;
+        width: auto;
+        max-width: 160px;
     }
-
-
-    /* 1 CARD */
 
     .cards {
         grid-template-columns: 1fr;
-
         width: 100%;
-
         padding: 10px 15px;
-
         gap: 15px;
-
         justify-items: center;
     }
 
-
     .card {
         width: 100%;
-
         max-width: 320px;
-
         height: 370px;
+        padding: 10px;
     }
 
-
-    .img {
+    .card .img {
         width: 100%;
-
         height: 160px;
+        object-fit: cover;
+        display: block;
+        margin: 0;
+        padding: 0;
+        border-radius: 15px;
     }
-
 
     .card h1 {
         font-size: 15px;
     }
 
-
     .card p {
         font-size: 13px;
     }
-
 
     #span {
         font-size: 10px;
     }
 
-
     .start {
         gap: 5px;
     }
 
-
     .book,
     .books {
         width: 105px;
-
         font-size: 10px;
     }
 }
 
-
-/* =================================================
-   VERY SMALL MOBILE
-================================================= */
-
+/* VERY SMALL PHONE */
 @media (max-width: 350px) {
-
-    .strong p {
-        font-size: 17px;
-    }
-
 
     .card {
         max-width: 290px;
     }
 
+    .card .img {
+        width: 100%;
+        height: 150px;
+    }
 
     .start {
         flex-direction: column;
-
         align-items: flex-start;
-
         gap: 10px;
     }
-
 
     .book,
     .books {
         width: 120px;
     }
 }
-
-
-
-
-
